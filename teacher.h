@@ -10,5 +10,5 @@ class Teacher : public Person
     string teacherType;
   public:
     Teacher(string name, string bDay, int uid, char gender, string teacherType); //constructor
-    void print(Teacher teacher); //print teacher
+    virtual void print(Teacher teacher); //print teacher
 }
