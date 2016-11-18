@@ -3,8 +3,6 @@
 //	ERIKA WINTERS & LILY TANG
 //  COP 3331
 //=================================================================
-
-
 #include <stdlib.h>
 #include <iostream>
 #include "Student.h"
@@ -14,13 +12,11 @@
 
 using namespace std;
 
-
-Student::Student(int uid, string studentType):Person(uid)
+Student::Student(string name, string bDay, int uid, char gender, string studentType):Person(name, bDay, uid, gender)
 {
   cout << "Student Constructor Called" << endl;
   this->studentType = studentType;
 }
-
 
 string Student::getStudentType()
 {
@@ -35,12 +31,7 @@ void Student::addCourse(Course c){
 
 void Student::print()
 {
-  cout << "Student's name: " << (*this).studentType << endl;
-  cout << "Student's UID: #U" << (*this).getUid() << endl;
-  for(list<Course>::iterator it = courseList.begin(); it!= courseList.end(); ++it){
-    cout << it->getCourseName() << endl;
-
-  }
-
+  Person::print();
+  cout << (*this).getName() << " is a " << (*this).studentType << " Student" << endl;
 
 }

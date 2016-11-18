@@ -18,13 +18,10 @@ class Student : public Person
     string studentType;
     list<Course> courseList;
   public:
-    /*Student(string name, string bDay, int uid, char gender, string studentType); //constructor
-    virtual void print(Student student); //print student*/
-    Student(int uid, string studentType);
+    Student(string name, string bDay, int uid, char gender, string studentType); //constructor
     string getStudentType(void);
     void addCourse(Course c);
     virtual void print(void);
 };
-
 
 #endif

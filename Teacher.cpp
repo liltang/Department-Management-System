@@ -9,7 +9,7 @@
 
 using namespace std;
 
-Teacher::Teacher(int uid, string teacherType):Person(uid)
+Teacher::Teacher(string name, string bDay, int uid, char gender, string teacherType):Person(name, bDay, uid, gender)
 {
   cout << "Teacher Constructor Called" << endl;
   this->teacherType = teacherType;
@@ -19,15 +19,10 @@ Teacher::Teacher(int uid, string teacherType):Person(uid)
 string Teacher::getTeacherType()
 {
   return teacherType;
-
-
 }
-
 
 void Teacher::print()
 {
-  cout << "Teacher's name: " << (*this).teacherType << endl;
-  cout << "Teacher's UID: #U" << (*this).getUid() << endl;
-
-
+  Person::print();
+  cout << (*this).getName() << " is a(n) " << (*this).getTeacherType() << endl;
 }

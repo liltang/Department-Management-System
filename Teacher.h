@@ -5,24 +5,18 @@
 #ifndef TEACHER_H
 #define TEACHER_H
 
-
 #include <string>
 #include "Person.h"
-
 
 class Teacher : public Person
 {
   private:
     string teacherType;
   public:
-    /*Student(string name, string bDay, int uid, char gender, string studentType); //constructor
-    virtual void print(Student student); //print student*/
+    Teacher(string name, string bDay, int uid, char gender, string teacherType); //constructor
 
-
-    Teacher(int uid, string teacherType);
     string getTeacherType(void);
     virtual void print(void);
 };
-
 
 #endif
