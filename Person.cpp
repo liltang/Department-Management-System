@@ -1,3 +1,10 @@
+//=================================================================
+//	PERSON.CPP
+//	ERIKA WINTERS & LILY TANG
+//  COP 3331
+//=================================================================
+
+
 #include <iostream>
 #include <string>
 #include "Person.h"
@@ -15,7 +22,7 @@ using namespace std;
 Person::Person(int uid){
 
 	this->uid = uid;
-  cout << "CONSTRUCTOR CALLED" << endl;
+  cout << "Person Constructor Called" << endl;
 }
 
 int Person::getUid(){
@@ -24,6 +31,6 @@ int Person::getUid(){
 
 void Person::print(){
 
-	cout << "ID is: " << this->uid << endl;
+	cout << "Person's UID: #U" << this->uid << endl;
 
 }
