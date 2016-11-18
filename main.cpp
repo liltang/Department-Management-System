@@ -8,6 +8,7 @@
 #include <string>
 #include "Person.h"
 #include "Student.h"
+#include "Course.h"
 
 using namespace std;
 
@@ -15,12 +16,12 @@ int main(){
 
 	cout  << "MAIN" << endl;
 
-	Person p(12);
+	/*Person p(12);
 	p.print();
 
   Student s(12, "cow");
 	s.print();
-
+*/
 	return 0;
 
 
