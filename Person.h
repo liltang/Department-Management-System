@@ -14,15 +14,17 @@ using namespace std;
 class Person {
 
 	private:
-	//string name;
-	//string bDay;
+	string name;
+	string bDay;
 	int uid;
-	//char gender;
+	char gender;
 
 	public:
-	//Person(string name, string bDay, int uid, char gender);
-	Person(int uid);
+	Person(string name, string bDay, int uid, char gender);
+	string getName(void);
+	string getbDay(void);
 	int getUid(void);
+	char getGender(void);
   virtual void print(void);
 
 };

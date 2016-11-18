@@ -11,26 +11,38 @@
 
 using namespace std;
 
-/*Person::Person(string name, string bDay, int uid, char gender){
+Person::Person(string name, string bDay, int uid, char gender){
 
 	this->name = name;
 	this->bDay = bDay;
 	this->uid = uid;
 	this->gender = gender;
-}*/
+	cout << "Person Constructor Called" << endl;
 
-Person::Person(int uid){
+}
 
-	this->uid = uid;
-  cout << "Person Constructor Called" << endl;
+string Person::getName(){
+	return name;
+
+}
+string Person::getbDay(){
+
+	return bDay;
 }
 
 int Person::getUid(){
 	return uid;
 }
 
+char Person::getGender(){
+	return gender;
+
+}
 void Person::print(){
 
-	cout << "Person's UID: #U" << this->uid << endl;
+	cout << "Name: " << this->name << endl;
+	cout << this->name << "'s Birthday: " << this->bDay << endl;
+	cout << this->name << "'s UID: #U" << this->uid << endl;
+	cout << this->name << "'s Gender: " << this->gender << endl;
 
 }
