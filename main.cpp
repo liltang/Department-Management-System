@@ -16,12 +16,16 @@ int main(){
 
 	cout  << "MAIN" << endl;
 
-	/*Person p(12);
+	Person p(12);
 	p.print();
 
   Student s(12, "cow");
+	s.addCourse(Course("math"));
 	s.print();
-*/
+
+	Course c("program");
+	//c.addStudent(3);
+
 	return 0;
 
 

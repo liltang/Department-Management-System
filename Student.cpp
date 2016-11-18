@@ -8,8 +8,9 @@
 #include <stdlib.h>
 #include <iostream>
 #include "Student.h"
+#include "Course.h"
 #include <string>
-
+#include <list>
 
 using namespace std;
 
@@ -24,8 +25,11 @@ Student::Student(int uid, string studentType):Person(uid)
 string Student::getStudentType()
 {
   return studentType;
+}
 
+void Student::addCourse(Course c){
 
+    courseList.push_back(c);
 }
 
 
@@ -33,20 +37,10 @@ void Student::print()
 {
   cout << "Student's name: " << (*this).studentType << endl;
   cout << "Student's UID: #U" << (*this).getUid() << endl;
+  for(list<Course>::iterator it = courseList.begin(); it!= courseList.end(); ++it){
+    cout << it->getCourseName() << endl;
+
+  }
 
 
 }
-//Constructor
-/*Student::Student(string name, string bDay, int uid, char gender, string studentType):Person(string name, string bDay, int uid, char gender)
-{
-  studentType = studentType;
-}
-
-
-//Print Student
-void Student::print(Student student)
-{
-
-
-}*/
-
