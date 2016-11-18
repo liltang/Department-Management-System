@@ -2,14 +2,16 @@
 #include <string>
 #include "Person.h"
 
-
 using namespace std;
 
 int main(){
 
-	cout  << "Test works" << endl;
+	cout  << "MAIN" << endl;
+
+	Person p(12);
+	p.print();
+
 	return 0;
-    
 
 
 }
