@@ -1,0 +1,6 @@
+Rosa_Parks 06/21/46 12345678 F Adjunct
+Erika_Summers 1/10/75 12345678 F Professor
+Donlad_Troomp 12/31/04 12345678 M Lecturer
+Britney_Spears 04/08/87 12345678 F Professor
+Miss_Piggy 11/03/00 12345678 F Professor
+Kim_JongIl 08/24/79 12345678 M Adjunct

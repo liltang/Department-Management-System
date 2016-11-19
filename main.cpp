@@ -61,6 +61,7 @@ int main(){
 
 for(i = 0; i < departmentVector.size(); i++)
 {
+	cout << "INFORMATION FOR: " << departmentVector[i].getDepartmentName() << endl;
 	departmentVector[i].printCourses();
 	departmentVector[i].printTeachers();
 	departmentVector[i].printStudents();
