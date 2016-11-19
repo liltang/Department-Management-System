@@ -14,9 +14,7 @@
 using namespace std;
 
 Department::Department()
-{
-  cout << "Department constructor called" << endl;
-}
+{ }
 
 void Department::setDepartmentName(string departmentName)
 {
@@ -31,7 +29,6 @@ string Department::getDepartmentName()
 void Department::addStudent(string student)
 {
   studentList.push_back(student);
-  cout << "student added" << endl;
 }
 
 void Department::printStudents()
@@ -44,7 +41,6 @@ void Department::printStudents()
 void Department::addTeacher(string teacher)
 {
   teacherList.push_back(teacher);
-  cout << "teach added" << endl;
 }
 
 void Department::printTeachers()
@@ -57,7 +53,6 @@ void Department::printTeachers()
 void Department::addCourse(string course)
 {
   courseList.push_back(course);
-  cout << "course added" << endl;
 }
 
 void Department::printCourses()

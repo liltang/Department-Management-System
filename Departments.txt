@@ -1,2 +1,1 @@
-Engineering,Programming,Statics,Paul Day,Erika Winters,Lily Tang,Joe Blo
-Math,Art
+Engineering,Programming,Statics,Paul Day,Erika Winters,Lily Tang,Joe Blo,Math,Calculus,Algebra,Math Man,Girl A,Boy B,Dog C

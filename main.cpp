@@ -24,58 +24,47 @@ int main(){
 	ifstream departmentFile ("Departments.txt");
 	string departmentName, courseName, teacherName, studentName;
 	char delimiter(',');
-	//list<Department> departmentList;
+	int i = 0, j;
 
 	vector<Department> departmentVector;
 
 	if(departmentFile.is_open())
 	{
-		getline(departmentFile, departmentName, delimiter);
-		cout << "did it get departname? " << departmentName <<endl;
-		Department newDepartment;
-		departmentVector.push_back(newDepartment);
-		departmentVector[0].setDepartmentName(departmentName);
-		getline(departmentFile, courseName, delimiter);
-		cout << "did it get course? " << courseName <<endl;
+		while(i < 2)
+		{
+			getline(departmentFile, departmentName, delimiter);
+			Department newDepartment;
 
-		departmentVector[0].addCourse(courseName);
-		getline(departmentFile, courseName, delimiter);
-		departmentVector[0].addCourse(courseName);
-		getline(departmentFile, teacherName, delimiter);
-		departmentVector[0].addTeacher(teacherName);
-		getline(departmentFile, studentName, delimiter);
-		departmentVector[0].addStudent(studentName);
-		getline(departmentFile, studentName, delimiter);
-		departmentVector[0].addStudent(studentName);
-		getline(departmentFile, studentName, delimiter);
-		departmentVector[0].addStudent(studentName);
+			departmentVector.push_back(newDepartment);
+			departmentVector[i].setDepartmentName(departmentName);
 
+			for(j = 0; j < 2; j++)
+			{
+				getline(departmentFile, courseName, delimiter);
+				departmentVector[i].addCourse(courseName);
+			}
+
+			getline(departmentFile, teacherName, delimiter);
+			departmentVector[i].addTeacher(teacherName);
+
+			for(j = 0; j < 3; j++)
+			{
+				getline(departmentFile, studentName, delimiter);
+				departmentVector[i].addStudent(studentName);
+			}
+
+			i++;
+		}
 	}
+
 	departmentFile.close();
 
-
-
-	departmentVector[0].printStudents();
-	departmentVector[0].printTeachers();
-	departmentVector[0].printCourses();
-
-	/*Department* d = new Department("bitches");
-	d->addStudent("Erika");
-	d->addStudent("Lily");
-	d->printStudents();*/
-
-  /*Student s("Erika Winters","02/03/1995",1234,'F',"Undergraduate");
-	Teacher t("Raymond James","06/23/1979",4321,'M',"Adjunct");
-	Course c("Programming");
-	Department d("Computer Science");
-
-	d.addStudent(s);
-	d.addTeacher(t);
-	d.addCourse(c);
-
-	d.printStudents();
-	d.printTeachers();
-	d.printCourses();*/
+for(i = 0; i < departmentVector.size(); i++)
+{
+	departmentVector[i].printCourses();
+	departmentVector[i].printTeachers();
+	departmentVector[i].printStudents();
+}
 
 	return 0;
 }
