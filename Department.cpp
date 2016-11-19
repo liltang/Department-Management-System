@@ -13,10 +13,14 @@
 
 using namespace std;
 
-Department::Department(string departmentName)
+Department::Department()
 {
   cout << "Department constructor called" << endl;
-  this->departmentName = departmentName;
+}
+
+void Department::setDepartmentName(string departmentName)
+{
+    this->departmentName = departmentName;
 }
 
 string Department::getDepartmentName()
@@ -24,38 +28,41 @@ string Department::getDepartmentName()
   return departmentName;
 }
 
-void Department::addStudent(Student student)
+void Department::addStudent(string student)
 {
   studentList.push_back(student);
+  cout << "student added" << endl;
 }
 
 void Department::printStudents()
 {
   cout << "Students in the " << getDepartmentName() << " Department:" << endl;
-  for(list<Student>::iterator it = studentList.begin(); it != studentList.end(); ++it)
-    it->print();
+  for(list<string>::iterator it = studentList.begin(); it != studentList.end(); ++it)
+    cout << *it << endl;
 }
 
-void Department::addTeacher(Teacher teacher)
+void Department::addTeacher(string teacher)
 {
   teacherList.push_back(teacher);
+  cout << "teach added" << endl;
 }
 
 void Department::printTeachers()
 {
   cout << "Teachers in the " << getDepartmentName() << " Department:" << endl;
-  for(list<Teacher>::iterator it = teacherList.begin(); it != teacherList.end(); ++it)
-    it->print();
+  for(list<string>::iterator it = teacherList.begin(); it != teacherList.end(); ++it)
+    cout << *it << endl;
 }
 
-void Department::addCourse(Course course)
+void Department::addCourse(string course)
 {
   courseList.push_back(course);
+  cout << "course added" << endl;
 }
 
 void Department::printCourses()
 {
   cout << "Courses in the " << getDepartmentName() << " Department:" << endl;
-  for(list<Course>::iterator it = courseList.begin(); it != courseList.end(); ++it)
-    it->print();
+  for(list<string>::iterator it = courseList.begin(); it != courseList.end(); ++it)
+    cout << *it << endl;
 }

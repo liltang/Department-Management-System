@@ -11,20 +11,21 @@ class Department
 {
   private:
     string departmentName;
-    list<Student> studentList;
-    list<Teacher> teacherList;
-    list<Course> courseList;
+    list<string> studentList;
+    list<string> teacherList;
+    list<string> courseList;
   public:
-    Department(string departmentName);
+    Department();
+    void setDepartmentName(string departmentName);
     string getDepartmentName();
 
-    void addStudent(Student student);
+    void addStudent(string student);
     void printStudents();
 
-    void addTeacher(Teacher teacher);
+    void addTeacher(string teacher);
     void printTeachers();
 
-    void addCourse(Course course);
+    void addCourse(string course);
     void printCourses();
 };
 
