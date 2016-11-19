@@ -23,8 +23,8 @@ string Teacher::getTeacherType()
 
 void Teacher::print()
 {
+  cout << "Teacher " << endl;
   Person::print();
-  cout << "Teacher's name: " << (*this).getName() << endl;
   cout << (*this).getName() << " is a " << (*this).teacherType << endl;
 
 }

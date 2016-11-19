@@ -36,10 +36,10 @@ int main(){
 
 			for(int i = 0; i < studentlist.size(); i++){
 					//cout << studentlist[i].getName() << endl;
-					//studentlist[i].print();
+					studentlist[i].print();
 			}
 
-
+			cout << endl;
 
 
 	vector<Teacher>teacherlist;
