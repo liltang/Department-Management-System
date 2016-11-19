@@ -26,7 +26,6 @@ Course::Course(string courseName, string courseType, string courseTeacher, strin
 	this->courseType = courseType;
 	this->courseTeacher = courseTeacher;
 	this->courseTA = courseTA;
-  cout << "Course Constructor Called" << endl;
 	//gradeList["d"] = "studentGrade";
 
 }

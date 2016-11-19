@@ -15,13 +15,9 @@ class Teacher : public Person
   private:
     string teacherType;
   public:
-    /*Student(string name, string bDay, int uid, char gender, string studentType); //constructor
-    virtual void print(Student student); //print student*/
-
-
-    Teacher(int uid, string teacherType);
-    string getTeacherType(void);
-    virtual void print(void);
+  Teacher(string name, string bDay, string uid, string gender, string teacherType);
+  string getTeacherType(void);
+  virtual void print(); //print student*/
 };
 
 

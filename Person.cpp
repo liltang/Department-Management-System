@@ -17,7 +17,6 @@ Person::Person(string name, string bDay, string uid, string gender){
 	this->bDay = bDay;
 	this->uid = "U"+uid;
 	this->gender = gender;
-	cout << "Person Constructor Called" << endl;
 
 }
 

@@ -4,14 +4,13 @@
 //=================================================================
 #include <stdlib.h>
 #include <iostream>
-#include "teacher.h"
+#include "Teacher.h"
 #include <string>
 
 using namespace std;
 
-Teacher::Teacher(int uid, string teacherType):Person(uid)
+Teacher::Teacher(string name, string bDay, string uid, string gender, string teacherType):Person(name, bDay, uid, gender)
 {
-  cout << "Teacher Constructor Called" << endl;
   this->teacherType = teacherType;
 }
 
@@ -19,15 +18,13 @@ Teacher::Teacher(int uid, string teacherType):Person(uid)
 string Teacher::getTeacherType()
 {
   return teacherType;
-
-
 }
 
 
 void Teacher::print()
 {
-  cout << "Teacher's name: " << (*this).teacherType << endl;
-  cout << "Teacher's UID: #U" << (*this).getUid() << endl;
-
+  Person::print();
+  cout << "Teacher's name: " << (*this).getName() << endl;
+  cout << (*this).getName() << " is a " << (*this).teacherType << endl;
 
 }

@@ -1,6 +1,6 @@
-Lily_Tang 01/01/96 12345678 F Undergrad 
-Erika_Winters 12/20/95 12345678 F Undergrad
-Bob_Marley 03/21/44 12345678 M Undergrad
-Citizen_Kane 09/08/21 12345678 M Graduate
-Jose_Galvis 11/03/00 12345678 M Graduate
-Kim_JongUn 01/30/03 12345678 M Undergrad
+Lily_Tang 01/01/96 12345678 F Undergrad Programming,Algebra
+Erika_Winters 12/20/95 12345678 F Undergrad Programming,Statics,Calculus
+Bob_Marley 03/21/44 12345678 M Undergrad Statics
+Citizen_Kane 09/08/21 12345678 M Graduate Calculus
+Jose_Galvis 11/03/00 12345678 M Graduate Algebra
+Kim_JongUn 01/30/03 12345678 M Undergrad Algebra

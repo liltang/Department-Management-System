@@ -3,3 +3,10 @@ Programming Undergrad Paul_Day Chris Lily_Tang 32
 Statics Graduate Paul_Day Greg Bob_Marley 12
 Calculus Undergrad Math_man NULL Jose_Galvis 121
 Algebra Graduate Math_man NULL Bob_Marley 21
+
+Programming Programming Statics Calculus Algebra
+Undergrad Undergrad Graduate Undergrad Graduate
+Paul_Day Paul_Day Paul_Day Math_man Math_man
+NULL Chris Greg NULL NULL
+Erika_Winters Lily_Tang Bob_Marley Jose_Galvis Bob_Marley
+100 32 12 121 21
