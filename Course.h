@@ -9,7 +9,8 @@
 #include <string>
 #include <iostream>
 #include <list>
-
+#include <map>
+#include "Student.h"
 using namespace std;
 
 class Student;
@@ -17,20 +18,19 @@ class Student;
 class Course {
 
 	private:
-	//string name;
-	//string bDay;
 	string courseName;
-	//char gender;
-	//list<int> studentList;
-	void addStudent(Student stud);
+	string courseType;
+	string courseTeacher;
+	string courseTA;
+	map<string, string> gradeList;
 
 	public:
-	//Person(string name, string bDay, int uid, char gender);
-	Course(string courseName);
+  Course(string courseName, string courseType, string courseTeacher);
+	Course(string courseName, string courseType, string courseTeacher, string courseTA);
 	string getCourseName(void);
+	void addStudent(Student stud, string studentGrade);
   virtual void print(void);
 
-	//friend Student;
 
 };
 

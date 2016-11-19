@@ -14,7 +14,8 @@
 
 using namespace std;
 
-Student::Student(string name, string bDay, int uid, char gender, string studentType):Person(name, bDay, uid, gender)
+
+Student::Student(string name, string bDay, string uid, string gender, string studentType):Person(name, bDay, uid, gender)
 {
   cout << "Student Constructor Called" << endl;
   this->studentType = studentType;
@@ -25,7 +26,7 @@ string Student::getStudentType()
   return studentType;
 }
 
-void Student::addCourse(Course c){
+void Student::addCourse(string c){
 
     courseList.push_back(c);
 }

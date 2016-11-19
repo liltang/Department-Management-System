@@ -9,18 +9,17 @@
 #include <string>
 #include <list>
 #include "Person.h"
-#include "Course.h"
 
-//class Course;
+
 class Student : public Person
 {
   private:
     string studentType;
-    list<Course> courseList;
+    list<string> courseList;
   public:
-    Student(string name, string bDay, int uid, char gender, string studentType); //constructor
+    Student(string name, string bDay, string uid, string gender, string studentType); //constructor
     string getStudentType(void);
-    void addCourse(Course c);
+    void addCourse(string c);
     virtual void print(void);
 };
 
