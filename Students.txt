@@ -1,4 +1,4 @@
-Lily_Tang 01/01/96 12345678 F Undergrad
+Lily_Tang 01/01/96 12345678 F Undergrad 
 Erika_Winters 12/20/95 12345678 F Undergrad
 Bob_Marley 03/21/44 12345678 M Undergrad
 Citizen_Kane 09/08/21 12345678 M Graduate

@@ -12,6 +12,7 @@
 #include <sstream>
 #include <fstream>
 #include <vector>
+#include <map>
 
 using namespace std;
 
@@ -33,10 +34,32 @@ int main(){
 
 			for(int i = 0; i < studentlist.size(); i++){
 					//cout << studentlist[i].getName() << endl;
-					studentlist[i].print();
+					//studentlist[i].print();
 			}
 
-		
+
+//COURSE
+vector<Course>clist;
+string tempcourse = "";
+			ifstream fin2("Courses.txt");
+
+		  string cname, ctype, teacher, ta, sname, grade;
+
+					while (fin2 >> cname >> ctype >> teacher >> ta >> sname >> grade)
+					{
+							Course newCourse(cname, ctype, teacher, ta);
+							if(tempcourse != newCourse.getCourseName()){
+							clist.push_back(newCourse);
+						}else{ cout << "Already exists" << endl;}
+							tempcourse = newCourse.getCourseName();
+							/* do something with name, var1 etc. */
+							//cout << name << bday << uid << gender << type << endl;
+					}
+
+					for(int i = 0; i < clist.size(); i++){
+							clist[i].print();
+					}
+
 
 	// ifstream inputFile("Students.txt");
 	//     string line;
