@@ -16,15 +16,15 @@ class Person {
 	private:
 	string name;
 	string bDay;
-	int uid;
-	char gender;
+	string uid;
+	string gender;
 
 	public:
-	Person(string name, string bDay, int uid, char gender);
+	Person(string name, string bDay, string uid, string gender);
 	string getName(void);
 	string getbDay(void);
-	int getUid(void);
-	char getGender(void);
+	string getUid(void);
+	string getGender(void);
   virtual void print(void);
 
 };

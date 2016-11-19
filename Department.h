@@ -15,18 +15,18 @@ class Department
     list<string> teacherList;
     list<string> courseList;
   public:
-    Department();
-    void setDepartmentName(string departmentName);
-    string getDepartmentName();
+    Department();                                   //Constructor
+    void setDepartmentName(string departmentName);  //Set function
+    string getDepartmentName();                     //Get function
 
-    void addStudent(string student);
-    void printStudents();
+    void addStudent(string student);                //Add a student to studentList
+    void printStudents();                           //Print out studentList
 
-    void addTeacher(string teacher);
-    void printTeachers();
+    void addTeacher(string teacher);                //Add a teacher to teacherList
+    void printTeachers();                           //Print out teacherList
 
-    void addCourse(string course);
-    void printCourses();
+    void addCourse(string course);                  //Add a course to courseList
+    void printCourses();                            //Print out courseList
 };
 
 #endif

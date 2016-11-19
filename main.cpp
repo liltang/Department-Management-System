@@ -4,7 +4,6 @@
 //  COP 3331
 //	g++ main.cpp Person.cpp Person.h Student.cpp Student.h Teacher.cpp Teacher.h Course.cpp Course.h Department.cpp Department.h
 //=================================================================
-
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -17,10 +16,9 @@
 
 using namespace std;
 
-int main(){
-
-	cout  << "MAIN" << endl;
-
+int main()
+{
+	//Set up variables for reading department file
 	ifstream departmentFile ("Departments.txt");
 	string departmentName, courseName, teacherName, studentName;
 	char delimiter(',');
@@ -28,6 +26,7 @@ int main(){
 
 	vector<Department> departmentVector;
 
+	//Read from Department.txt and insert departments into vector for storage
 	if(departmentFile.is_open())
 	{
 		while(i < 2)
@@ -52,20 +51,18 @@ int main(){
 				getline(departmentFile, studentName, delimiter);
 				departmentVector[i].addStudent(studentName);
 			}
-
 			i++;
 		}
 	}
-
 	departmentFile.close();
 
-for(i = 0; i < departmentVector.size(); i++)
-{
-	cout << "INFORMATION FOR: " << departmentVector[i].getDepartmentName() << endl;
-	departmentVector[i].printCourses();
-	departmentVector[i].printTeachers();
-	departmentVector[i].printStudents();
-}
-
+	//Print out department information
+	for(i = 0; i < departmentVector.size(); i++)
+	{
+		cout << "INFORMATION FOR: " << departmentVector[i].getDepartmentName() << endl;
+		departmentVector[i].printCourses();
+		departmentVector[i].printTeachers();
+		departmentVector[i].printStudents();
+	}
 	return 0;
 }

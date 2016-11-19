@@ -1,0 +1,4 @@
+Programming,undergraduate,Paul,None,Erika,100,
+Statics,Graduate,Paul,None,Lily,32,
+Calculus,Undergraduate,Math,Greg,Bob,12,
+Algerbra,Graduate,Math,None,Jose,121,
