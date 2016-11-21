@@ -38,12 +38,12 @@ int main(){
 					//studentlist[i].print();
 			}
 
-
-//COURSE
+//---BEGIN
+//THIS IS THE PART TO READ IN COURSES
 vector<Course>clist;
 ifstream courseFile("Courses.txt");
 char delimiter(',');
-string courseName, courseType, courseTeacher, courseTA, courseStudent, courseGrade;
+string courseName, courseType, courseTeacher, courseTA;
 
 if(courseFile.is_open())
 {
@@ -52,22 +52,16 @@ if(courseFile.is_open())
     getline(courseFile, courseName, delimiter);
     getline(courseFile, courseType, delimiter);
     getline(courseFile, courseTeacher, delimiter);
-    getline(courseFile, courseTA, delimiter);
-    getline(courseFile, courseStudent, delimiter);
-    getline(courseFile, courseGrade, delimiter);
+    getline(courseFile, courseTA);
 
     Course newCourse(courseName, courseType, courseTeacher, courseTA);
     clist.push_back(newCourse);
-    clist[i].addStudent(courseStudent, courseGrade);
   }
 }
 courseFile.close();
 
-for(i = 0; i < clist.size(); i++)
-{
-  cout << "grades and shit" << endl;
-  clist[i].print();
-}
+cout << clist.size() << endl;//should return 4
+//---END
 
 /*string tempcourse = "";
 			ifstream fin2("Courses.txt");
